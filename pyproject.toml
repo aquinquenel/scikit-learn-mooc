@@ -1,3 +1,28 @@
+[project]
+name = "scikit-learn-mooc"
+version = "0.1.0"
+description = "scikit-learn MOOC course materials"
+requires-python = ">=3.10"
+dependencies = [
+    "scikit-learn>=1.6",
+    "pandas>=1",
+    "matplotlib>=3.10",
+    "seaborn>=0.13",
+    "jupyterlab",
+    "notebook",
+    "plotly>=5.10",
+    "IPython",
+    "packaging",
+    "ipykernel>=7.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "jupytext",
+    "beautifulsoup4",
+    "jupyter-book<2.0",
+]
+
 [tool.black]
 line-length = 79
 target_version = ['py38', 'py39', 'py310', 'py311']
